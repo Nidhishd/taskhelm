@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  mariadb:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 10.3.24
+    created: "2020-11-21T21:29:32.1200835+05:30"
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system. MariaDB Server is intended for mission-critical, heavy-load
+      production systems as well as for embedding into mass-deployed software. Highly
+      available MariaDB cluster.
+    digest: ee4203948de3bba36920083b4967afc1ce921bbf369fa63f604022ddb0e178ef
+    engine: gotpl
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mariadb
+    icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb
+    - https://github.com/prometheus/mysqld_exporter
+    - https://mariadb.org
+    urls:
+    - http://127.0.0.1:8879/charts/mariadb-7.10.4.tgz
+    version: 7.10.4
+generated: "2020-11-21T21:29:32.1181264+05:30"
