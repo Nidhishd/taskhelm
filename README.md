@@ -5,25 +5,16 @@
 The Bitnami repository is already included in the Hubs and we will continue providing the same cadence of updates, support, etc that we've been keeping here these years. Installation instructions are very similar, just adding the _bitnami_ repo and using it during the installation (`bitnami/<chart>` instead of `stable/<chart>`)
 
 ```bash
-$ helm repo add bitnami https://charts.bitnami.com/bitnami
-$ helm install my-release bitnami/<chart>           # Helm 3
-$ helm install --name my-release bitnami/<chart>    # Helm 2
-```
+helm repo add taskhelm https://raw.githubusercontent.com/Nidhishd/taskhelm/main/
 
-To update an exisiting _stable_ deployment with a chart hosted in the bitnami repository you can execute
 
-```bash
-$ helm repo add bitnami https://charts.bitnami.com/bitnami
-$ helm upgrade my-release bitnami/<chart>
-```
+#helm install --name wordpress  --set wordpressUsername=admin,wordpressPassword=adminpassword,mariadb.mariadbRootPassword=secretpassword,persistence.existingClaim=wordpress-wordpress,allowEmptyPassword=false    taskhelm   --set securityContext.runAsUser=0 --set securityContext.fsGroup=0
 
-Issues and PRs related to the chart itself will be redirected to `bitnami/charts` GitHub repository. In the same way, we'll be happy to answer questions related to this migration process in [this issue](https://github.com/helm/charts/issues/20969) created as a common place for discussion.
 
-## TL;DR;
 
-```console
-helm install my-release stable/wordpress
-```
+
+
+
 
 ## Introduction
 
